@@ -1,0 +1,190 @@
+/* ==========================================
+   CONFIGURAÇÕES GERAIS E VARIÁVEIS
+   ========================================== */
+:root {
+    --primary: #2563eb;       /* Azul Principal */
+    --secondary: #10b981;     /* Verde Maker / Inovação */
+    --dark: #1f2937;          /* Cinza Escuro para textos e menus */
+    --light: #f3f4f6;         /* Cinza Claro para o fundo geral */
+    --white: #ffffff;         /* Branco para os blocos de conteúdo */
+    --transition: all 0.3s ease;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+/* ==========================================
+   CABEÇALHO E MENU
+   ========================================== */
+header {
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+nav a:hover {
+    color: var(--secondary);
+}
+
+/* ==========================================
+   BANNER PRINCIPAL (HERO)
+   ========================================== */
+.hero {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: var(--white);
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.hero h2 {
+    font-size: 2.8rem;
+    margin-bottom: 0.8rem;
+    font-weight: 800;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* ==========================================
+   ESTRUTURA DE CONTEÚDO (LAYOUT)
+   ========================================== */
+.container {
+    max-width: 1000px;
+    margin: 2.5rem auto;
+    padding: 0 1.5rem;
+}
+
+.section {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 10px;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.section h3 {
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+/* Linha decorativa abaixo dos títulos */
+.section h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background-color: var(--secondary);
+    border-radius: 2px;
+}
+
+.section p {
+    margin-top: 1rem;
+    color: #4b5563;
+}
+
+/* ==========================================
+   GRID DE RECURSOS E CARDS
+   ========================================== */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background: var(--light);
+    padding: 2rem;
+    border-radius: 8px;
+    border-top: 5px solid var(--primary);
+    transition: var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.card h4 {
+    font-size: 1.2rem;
+    color: var(--dark);
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 0.95rem;
+    margin-top: 0;
+}
+
+/* ==========================================
+   RODAPÉ
+   ========================================== */
+footer {
+    text-align: center;
+    padding: 1.8rem;
+    background-color: var(--dark);
+    color: var(--white);
+    margin-top: 5rem;
+    font-size: 0.9rem;
+}
+
+/* ==========================================
+   RESPONSIVIDADE (CELULARES)
+   ========================================== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .section {
+        padding: 1.5rem;
+    }
+}
