@@ -57,6 +57,18 @@ nav a {
 nav a:hover {
     color: var(--secondary);
 }
+.btn-voltar {
+    display: inline-block;
+    background-color: #cec9cc;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #0e4290;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
 
 /* ==========================================
    BANNER PRINCIPAL (HERO)
