@@ -212,4 +212,31 @@ footer {
     transition: all 0.3s ease;
     font-family: 'Poppins', sans-serif;
 }
+
+}
+.container2 {
+    max-width: 1500px;
+    margin: 2.5rem auto;
+    padding: 0 1.5rem;
+}
+
+.section2 {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 10px;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.section h4 {
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.section p {
+    margin-top: 1rem;
+    color: #4b5563;
 }
