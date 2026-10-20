@@ -214,14 +214,14 @@ footer {
 }
 
 }
-.container {
+.container2 {
     max-width: 2250px;
     margin: 2.5rem auto;
     padding: 0 1.5rem;
     font-size: 1.8rem;
 }
 
-.section {
+.section2 {
     background: var(--white);
     padding: 2.5rem;
     border-radius: 10px;
