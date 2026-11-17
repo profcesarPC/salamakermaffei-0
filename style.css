@@ -111,7 +111,6 @@ nav a:hover {
 .section h3 {
     font-size: 1.6rem;
     color: var(--primary);
-    margin-bottom: 1rem;
     position: relative;
     padding-bottom: 0.5rem;
 }
