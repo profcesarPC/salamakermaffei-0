@@ -9,6 +9,7 @@
     --light: #f3f4f6;         /* Cinza Claro para o fundo geral */
     --white: #ffffff;         /* Branco para os blocos de conteúdo */
     --transition: all 0.3s ease;
+    
 }
 
 * {
@@ -18,17 +19,13 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Barlow", sans-serif;
+    line-height: 1.6;
     background-color: var(--light);
     color: var(--dark);
-    line-height: 1.6;
 }
 
-.barlow-extrabold {
-  font-family: "Barlow", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
+
 
 /* ==========================================
    CABEÇALHO E MENU
