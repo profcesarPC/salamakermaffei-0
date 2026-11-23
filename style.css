@@ -134,6 +134,18 @@ nav a:hover {
     color: #4b5563;
 }
 
+.imagem-projeto {
+  display: block;
+  margin: 20px auto;
+
+  border-radius: 12px;
+
+  border: 2px solid #353e49;
+
+  max-width: 100%;
+  height: auto;
+}
+
 
 
 /* ==========================================
